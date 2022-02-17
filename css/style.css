@@ -61,7 +61,7 @@ nav {
 .nav__menu ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -119,6 +119,10 @@ main {
     margin-top: 30px;
 }
 
+.main__presentation {
+    margin-bottom: 30px;
+}
+
 .main__content {
     display: flex;
     flex-direction: row;
@@ -130,21 +134,18 @@ main {
     width: 250px;
     height: 250px;    
     display: inline-block;
-    border-radius: 10px; 
-    margin: 15px;
+    border-radius: 5px; 
+    margin: 7.5px;
     background-repeat: no-repeat;
     background-size: 250px 250px;
     overflow: hidden;
-    transition: all 0.5s;
+    transition: all 0.5s;    
+    background-size: cover;
+    object-fit: cover;
 }
 
 .main__content_proyect:hover {
-    transform: scale(1.08);
-}
-
-.main__content_proyect {
-    background-size: cover;
-    object-fit: cover;
+    transform: scale(1.05);
 }
 
 .main__content_proyect_background_1 {
@@ -182,7 +183,7 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     width: 250px;
     height: 250px;
-    border-radius: 10px; 
+    border-radius: 5px; 
     transition: all 0.5s;
 }
 
@@ -335,7 +336,6 @@ img.big {
     width: 70%;
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
 }
 
 .main__content_servicios_item{
@@ -455,11 +455,20 @@ footer img{
         height: 200px;
     }
 
+    .main__content_proyect_text {
+        padding-top: 10px;
+    }
+
+    .main__content_description{
+        visibility: visible;
+        font-size: 0.8em;
+    }
+
         /****** GALERIA *******/
 
         .main__content_galeria {
             width: 90%;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             row-gap: 5px;
             column-gap: 5px;
         }
@@ -546,16 +555,44 @@ footer img{
         margin-top: 1em;
     }
 
+    .main__content{
+        width: 90vw;
+        flex-direction: column;
+    }
+
     .main__content_proyect {
-        width: 150px;
+        width: 90vw;
         height: 150px;
-        margin: 10px;
+        margin: 10px 0 10px;
         background-size: 150px 150px;
+        font-size: 1em;
+        background-size: cover;
+        object-fit: cover;
     }
 
     .main__content_proyect_background_secondary{
-        width: 150px;
+        width: 90vw;
         height: 150px;
+    }
+
+    .main__content_proyect_text {
+        padding-top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main__content_text{
+        margin-left: 10px;
+    }
+    
+    .main__content_description{
+        margin-left:10px;
+        text-align: left;
+        font-size: 0.9em;
+        visibility: visible;
+        text-overflow: ellipsis;
     }
 
     /****** GALERIA *******/
