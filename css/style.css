@@ -409,6 +409,35 @@ footer img{
     height: 25px;
 }
 
+@media screen and (max-width: 1100px) {
+
+    .container{
+        grid-template-rows: 100px auto auto 330px;
+    }
+
+    .nav__container {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .nav__presentation {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav__menu{
+        width: 90%;
+    }
+
+    .nav__menu ul{
+        justify-content: space-between;
+    }
+
+    main {
+        width: 90vw;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     .container{
@@ -426,12 +455,11 @@ footer img{
     }
 
     .nav__menu{
-        width: 100%;
+        width: 90%;
     }
 
-    .nav__item{
-        margin: 5px;
-        width: 70px;
+    .nav__menu ul{
+        justify-content: space-between;
     }
 
     header {
@@ -542,7 +570,7 @@ footer img{
 @media screen and (max-width: 480px) {
 
     .container{
-        grid-template-rows: 200px auto auto 300px;
+        grid-template-rows: 250px auto auto 300px;
     }
 
     nav {
