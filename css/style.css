@@ -115,7 +115,7 @@ header {
 
 main {
     grid-area: main;
-    width: 60vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -434,7 +434,7 @@ footer img{
     }
 
     main {
-        width: 90vw;
+        width: 100vw;
     }
 }
 
@@ -724,12 +724,21 @@ footer img{
         padding-right: 3em;
     }
 
+    .footer__redes_sociales_container{
+        margin-left: 20px;
+    }
+
     .footer__redes_sociales {
         margin-left: 0;
     }
 
     .footer__contact_info{
         margin: 10px 0 0 -30px;
+    }
+
+    .footer__contact_info li {
+        margin: 10px;
+        font-size: 14px;
     }
 
 }
