@@ -1,0 +1,3 @@
+@mixin containerGridTemplateRow($nav, $header, $main, $footer){
+    grid-template-rows: $nav $header $main $footer;
+}

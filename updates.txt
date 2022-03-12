@@ -1,0 +1,7 @@
+12/3
+- Se agrego agrego sass al proyecto
+- se creo un for, un each en el archivo style.scss
+- Se creo un archivo nuevo mixins.scss y se agrego el mixin containerGridTemplateRow
+- Se agrego un mapa en footer y se le dio color a los iconos de las redes sociales.
+- Se agrego otro mapa en footer y se le dio color al footer y al fondo del container de las redes sociales.
+- Se agrego un extend en el archivo style.css para la dimensiones de las caja de los proyectos en la pagina principal.
