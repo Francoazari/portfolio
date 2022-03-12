@@ -1,0 +1,60 @@
+.main__content_about_me{
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.main__content_image{
+    width:40%;
+
+    img{
+        width:100%;
+    }
+}
+
+
+.main__content_aboutme{
+    width: 50%;
+    margin-left: 25px;
+}
+
+@media screen and (max-width: 1100px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .main__content_about_me{
+        width:70%;
+        flex-direction: column;
+    }
+
+    .main__content_image{
+        width:100%;
+    }
+
+    .main__content_aboutme{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .main__content_about_me {
+        width:90%;
+        flex-direction: column;
+    }
+
+    .main__content_image {
+        width:100%;
+    }
+
+    .main__content_aboutme {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    
+}

@@ -1,0 +1,72 @@
+.main__content_contacto{
+    width: 50%;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    input[type=text] {
+		height: 35px;
+		width: 100%;
+		border-bottom: 2px solid $seaWater;
+		padding: 20px;
+		outline: 0;
+		font-size: 1rem;
+		color: $black;
+		background: transparent;
+		margin-top: 10px;
+	}
+
+	input[type=email] {
+		height: 35px;
+		width: 100%;
+		border-bottom: 2px solid $seaWater;
+		padding: 20px;
+		outline: 0;
+		font-size: 1rem;
+		color: $black;
+		background: transparent;
+		margin-top: 10px;
+	}
+
+    textarea {
+        width: 100%;
+        border-bottom: 2px solid $seaWater;
+        padding: 20px;
+        font-size: 1.3rem;
+        margin-top: 10px;
+        outline: 0;
+        font-size: 1rem;
+        color: $black;
+        background: transparent;
+    }
+}
+
+.main__content_table_submit{
+    height: 35px;
+    width: 100%;
+    color: $white;
+    border: 0px;
+    background-color: $seaWater;
+    margin: 20px 0px 50px 0px;
+
+    &:hover {
+        background-color: #39a794;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main__content_contacto{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .main__content_contacto {
+        width: 90%;
+    }
+    
+}

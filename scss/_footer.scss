@@ -1,0 +1,93 @@
+footer {
+    grid-area: footer;
+    width: 100%;
+    background-color: #e0e0e0;
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+
+    img{
+        height: 20px;
+        transition: all 0.3s;
+    }
+}
+
+.footer__info{
+    width: 75vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3em;
+}
+
+.footer__redes_sociales {
+    display: flex;
+}
+
+.footer__redes_sociales_container {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: $white;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: $white;
+
+        img {
+            height: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .footer__info {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 3em;
+    }
+
+    .footer__contact_info {
+        margin: 20px 0 0 0;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .footer__info {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 3em;
+    }
+
+    .footer__redes_sociales_container {
+        margin-left: 20px;
+    }
+
+    .footer__redes_sociales {
+        margin-left: 0;
+    }
+
+    .footer__contact_info {
+        margin: 10px 0 0 -30px;
+
+        li {
+            margin: 10px;
+            font-size: 14px;
+        }
+    }
+    
+}
