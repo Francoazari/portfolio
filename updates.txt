@@ -5,3 +5,4 @@
 - Se agrego un mapa en footer y se le dio color a los iconos de las redes sociales.
 - Se agrego otro mapa en footer y se le dio color al footer y al fondo del container de las redes sociales.
 - Se agrego un extend en el archivo style.css para la dimensiones de las caja de los proyectos en la pagina principal.
+- Se agregaron las etiquetas meta description y keywords, para mejorar el SEO.
