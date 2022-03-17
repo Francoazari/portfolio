@@ -1,14 +1,15 @@
 nav {
     width: 100%;
     grid-area: nav;
-    background:#d6d6d6;
-    background-image: linear-gradient(to bottom, #f8f8f8, #eeeeee);
+    background-image: radial-gradient(circle at 0.48% 36.73%, #aa62db 0, #8451d8 25%, #4d42d4 50%, #0037d0 75%, #0031cd 100%);
     background-repeat: repeat-x;
     display: flex;
     justify-content: center;
     position: sticky;
     top: 0;
     z-index: 10;
+    
+    
 }
 
 .nav__container {
@@ -17,6 +18,7 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    padding: 0.5em;
 }
 
 .nav__presentation {
@@ -38,6 +40,10 @@ nav {
     }
 }
 
+#nav__menu_checkbox, .nav__menu_hamburguer{
+    display: none;
+}
+
 .nav__item {
     width: 80px;
     display: inline-block;
@@ -47,19 +53,20 @@ nav {
     color: $black;
 
     a {
-        color: $black;
+        
+        color: $white;
         transition: color 0.15s;
     }
 
     a {
 		&:hover {
-			color: $seaWater;
+            font-weight: bold;
 		}
 	}
 
     &--active {
         a {
-            color: $seaWater;
+            font-weight: bold;
         }
     }
 }
@@ -72,7 +79,7 @@ nav {
 .nav__name {
     h1 {
         font-size: 1.5em;
-        color: #666666;
+        color: $white;
     }
 }
 
@@ -124,13 +131,42 @@ nav {
         flex-direction: column;
     }
 
+    .nav__container {
+        width: 100vw;
+        flex-direction: row;
+    } 
+
+    .nav__menu_hamburguer {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid $white;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        color: $white;
+    }
+
     .nav__menu {
         width: 100%;
+        text-align: right;
+        padding-right: 1em;
+        transition: all 0.5s;
 
         ul{
-            flex-direction: column;
-            align-items: flex-start;
+            display: none;
         }
+    }
+
+    input[type=checkbox]:checked ~ ul {
+        display: block;
+    }
+      
+    li {
+        display: block;
     }
 
     .nav__presentation {

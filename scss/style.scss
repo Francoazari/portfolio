@@ -19,12 +19,12 @@ a {
     display: grid;
 	grid-template-areas: 
 	"nav"
-    "header"
 	"main"
 	"footer";
 	grid-template-columns: 100%;
-    @include containerGridTemplateRow(50px, auto, auto, 200px);
+    @include containerGridTemplateRow(50px, auto, 200px);
     justify-items: center;
+    align-content: space-between;
 }
 
 li {
@@ -37,9 +37,9 @@ main {
     width: 80vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .main__image_img {
@@ -48,7 +48,16 @@ main {
 }
 
 .main__presentation {
+    width:70vh;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        padding: 1em;
+        text-align: center;
+    }
 }
 
 .main__content {
@@ -143,7 +152,7 @@ $background: '../images/proyects/proyect_1/background-image.jpg';
 @media screen and (max-width: 1100px) {
 
     .container{
-        @include containerGridTemplateRow(100px, auto, auto, 330px);
+        @include containerGridTemplateRow(100px, auto, 330px);
     }
 
     main {
@@ -155,12 +164,12 @@ $background: '../images/proyects/proyect_1/background-image.jpg';
 @media screen and (max-width: 768px) {
 
     .container{
-        @include containerGridTemplateRow(100px, auto, auto, 330px);
+        @include containerGridTemplateRow(100px, auto, 330px);
     }
 
     main {
         width: 100vw;
-        margin-top: 15px;
+        padding-top: 15px;
     }
 
     .main__image_img {
@@ -194,7 +203,11 @@ $background: '../images/proyects/proyect_1/background-image.jpg';
 @media screen and (max-width: 480px) {
 
     .container {
-        @include containerGridTemplateRow(250px, auto, auto, 330px);
+        @include containerGridTemplateRow(auto, auto, auto);
+    }
+
+    .main__presentation {
+        width: 100%;
     }
 
     .main__content {
