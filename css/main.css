@@ -282,6 +282,9 @@ h3 {
     width: 90%; }
 
 .main__content_servicios_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 55%; }
 
 @media screen and (max-width: 768px) {

@@ -19,6 +19,9 @@
 }
 
 .main__content_servicios_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 55%;
 }
 
