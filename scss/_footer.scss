@@ -35,7 +35,6 @@ footer {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding-right: 3em;
 }
 
 .footer__redes_sociales {
@@ -83,7 +82,6 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-right: 3em;
     }
 
     .footer__contact_info {
@@ -102,8 +100,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        padding-right: 3em;
+        align-content: center;
     }
 
     .footer__redes_sociales_container {
@@ -111,6 +108,7 @@ footer {
     }
 
     .footer__redes_sociales {
+        justify-content: center;
         width: 100%;
         margin-left: 0;
     }
