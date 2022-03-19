@@ -10,7 +10,6 @@ body {
 
 nav {
   width: 100%;
-  grid-area: nav;
   background-image: radial-gradient(circle at 0.48% 36.73%, #aa62db 0, #8451d8 25%, #4d42d4 50%, #0037d0 75%, #0031cd 100%);
   background-repeat: repeat-x;
   display: flex;
@@ -31,8 +30,7 @@ nav {
   width: 40%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  margin-left: 5%; }
+  align-items: center; }
 
 .nav__menu {
   width: 60%; }
@@ -309,22 +307,21 @@ h3 {
     width: 100%; } }
 
 footer {
-  grid-area: footer;
   width: 100%;
-  margin-top: 2em;
-  background-color: #d9d9d9;
-  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+  margin-top: 5em;
+  padding: 15px;
+  border-top: 1px solid #dddddd;
   display: flex;
   justify-content: center; }
   footer img {
-    height: 20px;
+    height: 15px;
     transition: all 0.3s; }
 
 .footer__info {
   width: 75vw;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center; }
 
 .footer__redes_sociales {
@@ -337,17 +334,17 @@ footer {
   align-items: center; }
 
 .footer__redes_sociales_container {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 5px;
-  background-color: #FFFFFF;
+  background-color: #dbdbdb;
   margin: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.5s; }
   .footer__redes_sociales_container:hover img {
-    height: 25px; }
+    height: 20px; }
   .footer__redes_sociales_container.facebook:hover {
     background-color: #86AFFF; }
   .footer__redes_sociales_container.twitter:hover {
@@ -357,6 +354,10 @@ footer {
   .footer__redes_sociales_container.linkedin:hover {
     background-color: #73C3FF; }
 
+@media screen and (max-width: 1100px) {
+  .footer__contact_info p {
+    text-align: center; } }
+
 @media screen and (max-width: 768px) {
   .footer__info {
     width: 90vw;
@@ -365,7 +366,12 @@ footer {
     justify-content: center;
     align-items: center; }
   .footer__contact_info {
-    margin: 5px 0 0 0; } }
+    margin: 15px 0 0 0; }
+  .footer__redes_sociales {
+    justify-content: space-evenly;
+    width: 100%; }
+  .footer__redes_sociales_container {
+    margin: 0; } }
 
 @media screen and (max-width: 480px) {
   footer {
@@ -376,12 +382,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-content: center; }
-  .footer__redes_sociales_container {
-    margin-left: 20px; }
   .footer__redes_sociales {
-    justify-content: center;
-    width: 100%;
-    margin-left: 0; }
+    justify-content: space-evenly;
+    width: 100%; }
+  .footer__redes_sociales_container {
+    margin: 0; }
   .footer__contact_info {
     width: 100%;
     margin: 10px 0 0 -30px; }
@@ -393,19 +398,16 @@ a {
   text-decoration: none; }
 
 .container {
-  display: grid;
-  grid-template-areas: "nav" "main" "footer";
-  grid-template-columns: 100%;
-  grid-template-rows: 50px auto 200px;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
-  align-content: space-between; }
+  align-items: center; }
 
 li {
   list-style: none;
   margin: 20px; }
 
 main {
-  grid-area: main;
   width: 80vw;
   display: flex;
   flex-direction: column;
@@ -419,7 +421,7 @@ main {
   height: auto; }
 
 .main__presentation {
-  width: 70vh;
+  width: 70%;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -446,7 +448,6 @@ main {
   background-repeat: no-repeat;
   background-size: 250px 250px;
   overflow: hidden;
-  transition: all 0.5s;
   background-size: cover;
   object-fit: cover; }
   .main__content_proyect:hover {
@@ -485,7 +486,6 @@ main {
 .main__content_proyect_background_secondary {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  transition: all 0.5s;
   display: flex;
   align-items: center; }
   .main__content_proyect_background_secondary:hover .main__content_text {
@@ -514,11 +514,12 @@ main {
   margin-top: 300px; }
 
 .main__content_description {
-  visibility: hidden; }
+  visibility: hidden;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 @media screen and (max-width: 1100px) {
-  .container {
-    grid-template-rows: 100px auto 330px; }
   .main__content_proyect_text {
     padding-top: 5px; }
   .main__content_description {
@@ -532,8 +533,6 @@ main {
     width: 100vw; } }
 
 @media screen and (max-width: 768px) {
-  .container {
-    grid-template-rows: 100px auto 330px; }
   main {
     width: 100vw;
     padding-top: 15px; }
@@ -557,8 +556,6 @@ main {
     font-size: 0.8em; } }
 
 @media screen and (max-width: 480px) {
-  .container {
-    grid-template-rows: auto auto 300px; }
   .main__presentation {
     width: 100%; }
   .main__content {

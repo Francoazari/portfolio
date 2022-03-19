@@ -1,6 +1,5 @@
 nav {
     width: 100%;
-    grid-area: nav;
     background-image: radial-gradient(circle at 0.48% 36.73%, #aa62db 0, #8451d8 25%, #4d42d4 50%, #0037d0 75%, #0031cd 100%);
     background-repeat: repeat-x;
     display: flex;
@@ -26,7 +25,6 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 5%;    
 }
 
 .nav__menu{
