@@ -77,7 +77,7 @@ main {
     background-repeat: no-repeat;
     background-size: 250px 250px;
     overflow: hidden;
-    //transition: all 0.25s;    
+    transition: all 0.25s;    
     background-size: cover;
     object-fit: cover;
 
@@ -103,7 +103,7 @@ $background: '../images/proyects/proyect_1/background-image.jpg';
     background-color: rgba(0, 0, 0, 0.5);
     @extend .main__content_dimentions;
     border-radius: 5px; 
-    //transition: all 0.25s;
+    transition: all 0.25s;
     display:flex;
     align-items: center;
 
@@ -123,7 +123,7 @@ $background: '../images/proyects/proyect_1/background-image.jpg';
 
 .main__content_proyect_text {
     position: relative;
-    transition: all 0.5s;
+    transition: all 0.25s;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,6 +237,8 @@ $background: '../images/proyects/proyect_1/background-image.jpg';
         object-fit: cover;
     }
 
+    
+
     .main__content_proyect_background_secondary {
         width: 90vw;
         height: 150px;
@@ -263,6 +265,10 @@ $background: '../images/proyects/proyect_1/background-image.jpg';
         font-size: 0.9em;
         visibility: visible;
         text-overflow: ellipsis;
+
+        p {
+            text-align: left;
+        }
     }
 
 }
